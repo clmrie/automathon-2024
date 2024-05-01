@@ -18,7 +18,7 @@ from PIL import Image
 import torchvision.transforms.v2 as transforms
 
 # UTILITIES
-'''
+
 
 def extract_frames(video_path, nb_frames=10, delta=1, timeit=False):
     # use time to measure the time it takes to resize a video
@@ -93,7 +93,7 @@ nb_frames = 10
 
 ## MAKE RESIZED DATASET
 resized_dir = os.path.join(dataset_dir, "resized_dataset")
-"""
+
 create_small_dataset = False
 errors = []
 if not os.path.exists(resized_dir) or create_small_dataset:
@@ -147,7 +147,7 @@ if not os.path.exists(resized_dir) or create_small_dataset:
     os.system(f"cp {os.path.join(dataset_dir, 'experimental_dataset', 'metadata.json')} {os.path.join(resized_dir, 'experimental_dataset', 'metadata.json')}")
     if errors:
         print(errors)
-"""
+
 use_small_dataset = True
 if use_small_dataset:
     dataset_dir = resized_dir
@@ -291,6 +291,3 @@ print("Saving...")
 tests = ["id,label\n"] + [f"{ID},{label_pred[0]}\n" for ID, label_pred in zip(ids, labels)]
 with open("submission.csv", "w") as file:
     file.writelines(tests)
-
-    
-    '''
