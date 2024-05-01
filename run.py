@@ -18,6 +18,7 @@ from PIL import Image
 import torchvision.transforms.v2 as transforms
 
 # UTILITIES
+'''
 
 def extract_frames(video_path, nb_frames=10, delta=1, timeit=False):
     # use time to measure the time it takes to resize a video
@@ -290,3 +291,6 @@ print("Saving...")
 tests = ["id,label\n"] + [f"{ID},{label_pred[0]}\n" for ID, label_pred in zip(ids, labels)]
 with open("submission.csv", "w") as file:
     file.writelines(tests)
+
+    
+    '''
