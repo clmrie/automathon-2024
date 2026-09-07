@@ -114,3 +114,8 @@ git pull
 ```
 
 
+
+
+## Personal website
+
+Check out [Clement Marie’s personal website](https://clmrie.github.io/) for my research, projects, and CV.
